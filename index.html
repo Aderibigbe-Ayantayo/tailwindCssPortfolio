@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Name</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+
+           /* Media query for small screens */
+           @media (max-width: 640px) {
+    .container.mx-auto > div.flex {
+        display: block;
+    }
+    .container.mx-auto > div.flex > * {
+        margin-bottom: 10px; 
+    }
+    .header-text {
+                font-size: 1.8rem;
+            }
+            .container .mx-auto{
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+
+            .bg-cover {
+            background-size: cover;
+        }
+}
+
+          
+
+        /* Media query for medium screens */
+        @media (min-width: 641px) and (max-width: 1023px) {
+            .header-text {
+                font-size: 1.8rem;
+            }
+            .container .mx-auto{
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+            }
+            .featured-post {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        /* Media query for large screens */
+        @media (min-width: 1024px) {
+            .header-text {
+                font-size: 2rem;
+            }
+
+            .featured-post {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+    </style>
+    </head>
+
+
+<body class="relative bg-cover bg-center min-h-screen"  style="background-image: url(./blog\ bg\ img.jpg);">
+    <!-- Header Section -->
+    <header class="bg-blue-200 text-[#5b091c] ">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-[2rem] font-bold ">Welcome to DMGB'S Blog</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-green-700">Home</a></li>
+                    <li><a href="#" class="hover:text-green-700">About</a></li>
+                    <li><a href="#" class="hover:text-green-700">Contact</a></li>
+                </ul>
+            </nav>
+
+    </header>
+
+    <!-- Featured Posts Section -->
+    <section class="py-8 ">
+        <div class="container mx-auto">
+            <marquee class="text-center text-white text-xl mb-2">News, Events, Entertainment, Lifestyle, Fashion, Beauty, 
+                Inspiration and yes... Gossip! *Wink*</marquee>
+            
+            <h2 class="text-3xl font-bold mb-2 text-center text-white">Featured Posts</h2>
+            <!-- Featured Post Cards -->
+            <div class="grid grid-cols-3 gap-2">
+                <!-- Featured Post 1 -->
+                <div class="bg-white rounded-lg shadow-md text-center">
+                    <a href="#" class="text-xl font-bold mb-2 hover:text-green-700 hover:underline">How Gym Shark Went From $0 to $128M in 6 Years...</a>
+                    <img src="./blog featured pics1.jpg" alt="Post 1 Image" class="w-full h-80 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <p class="text-gray-600">A self-made millionaire, Ben Francis at the age of 19 founded Gym Shark in his parent's house in 2012. Fast forward 6 years to today, the fitness apparel is raking in 128M in revenue and is growing 200% almost every year.</p>
+                    </div>
+                </div>
+                <!-- Featured Post 2 -->
+                <div class="bg-white rounded-lg shadow-md text-center">
+                    <a href="#" class="text-xl font-bold mb-2 hover:text-green-700 hover:underline">How music change Wizkid life for the better...</a>
+                    <img src="./blog featured pics2.jpg" alt="Post 1 Image" class="w-full h-80 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <p class="text-gray-600">“I believe if I wasn't making music I would have been on the streets hustling like every other kid. ”God blessed me with music, and it's safe to say music changed my life. It also changed the life of those I love and care about,” he said.</p>
+                    </div>
+                </div>
+                    
+
+                <!-- Featured Post 3 -->
+
+
+                <div class="bg-white rounded-lg shadow-md text-center">
+                    <a href="#" class="text-xl font-bold mb-2 hover:text-green-700 hover:underline">Real Estate business in Nigeria is a lucrative deal...</a>
+                    <img src="./blog featured pics3.jpg" alt="Post 1 Image" class="w-full h-80 object-cover rounded-t-lg">
+                    <div class="p-4">
+                        <p class="text-gray-600">Real Estate is a very profitable business in Nigeria as it is a very versatile one. The investment opportunities that are available in real estate are numerous and this is what makes it very profitable. There are so many ways to make money in real estate so it depends on the areas you want to focus on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Section -->
+    <section class="py-8 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Categories</h2>
+            <!-- Categories Badges -->
+            <div class="flex gap-4">
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">News</p>
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">Entertainment</p>
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">Lifestyle</p>
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">Fashion</p>
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">Beauty</p>
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">Inspiration</p>
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">Events</p>
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">Gossip</p>
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">Innovation</p>
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">Ideas</p>
+                <p class="px-2 py-1 bg-blue-500 text-white text-center rounded-full">Social Mkt</p>
+                
+            </div>
+
+
+
+            </section>
+
+    <!-- Recent Posts Section -->
+    <section class="py-8 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Recent Posts</h2>
+            <ul class="space-y-4">
+                <li>
+                    <a href="#" class="text-lg font-semibold">Post 1: How Gym Shark Went From $0 to $128M in 6 Years...</a>
+                    <p class="mt-4">April 23, 2024</p>
+                </li>
+                <li>
+                    <a href="#" class="text-lg font-semibold">Post 2: How music change Wizkid life for the better...</a>
+                    <p class="mt-4">April 23, 2024</p>
+                </li>
+                <li>
+                    <a href="#" class="text-lg font-semibold">Post 3: Real Estate business in Nigeria is a lucrative deal...</a>
+                    <p class="mt-4">April 23, 2024</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription Form -->
+    <section class="py-8 bg-gray-200">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4 text-center">Subscribe to Our Newsletter</h2>
+            <!-- Newsletter Form -->
+            <form>
+                <div class="flex justify-center items-center">
+                    <input type="email" class="ring-4 px-4 py-2 mr-2 rounded-l-lg" placeholder="Your Email Address">
+                    <button type="submit" class="ring-4 px-6 py-2 bg-blue-500 text-gray-600 hover:text-white rounded-r-lg opacity-6"><i class="fas fa-search search-icon"></i></button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <!-- Social Media Icons -->
+                <a href="www.facebook.com" class="text-xl mr-4"><i class="fab fa-facebook"></i></a>
+                <a href="www.twitter.com" class="text-xl mr-4"><i class="fab fa-twitter"></i></a>
+                <a href="www.instagram.com" class="text-xl mr-4"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 DMGB'S Blog. All Rights Reserved.</p>
+        </div>
+        <div class="flex mx-4 gap-4 my-5">
+            <a href="#" target="_blank">Advertise with us</a>
+            <a href="#" target="_blank">News/Tip-Off</a>
+            <a href="#" target="_blank">Privacy Policy</a>
+    </div>
+</footer>
+</body>
+
+</html>
